@@ -1,0 +1,93 @@
+
+.custom-navbar {
+    background-color: rgb(23, 57, 85); 
+  }
+  
+  .navbar-brand {
+    font-family: "Helvetica", sans-serif; 
+    font-weight: bold; 
+    
+    font-size: 24px; 
+    color: #e3dbbd;
+  
+  }
+  
+  .btn-custom {
+    background-color: rgb(10, 60, 12); 
+    color: rgb(204, 197, 167); 
+  }
+  .category-card {
+    border: 1px solid #f4f3f2;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color:rgb(23, 57, 85); 
+    box-shadow: 0 2px 4px rgba(78, 16, 72, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  .category-section-title {
+    font-size: 24px;
+    color: #303943; 
+    margin-top: 80px; 
+    margin-bottom: 80px; 
+   
+    text-transform: uppercase; 
+    font-weight: bold; 
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  }
+  .category-sec2 {
+    font-size: 24px;
+    color: #303943; 
+    margin-top: 40px; 
+    margin-bottom: 10px; 
+    text-align: center; 
+    text-transform: uppercase; 
+    font-weight: bold; 
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  }
+  
+  .card {
+   
+    border: 1px solid #4a564a;
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+  }
+  /* Style pour la classe .custom-body-color */
+.custom-body-color {
+    background-color: #ffffff; /* Couleur d'arrière-plan personnalisée */
+    margin:  20px; /* Modifiez les valeurs de marge selon vos préférences */;
+    border: 5px solid rgb(23, 57, 85); 
+    border-radius: 10px;
+   
+  }
+  
+
+/* Style pour la classe .custom-body-color */
+.custom-text-color {
+    background-color:rgb(23, 57, 85);  /* Couleur d'arrière-plan personnalisée */
+    margin: 10px;
+    color: #e3dbbd;
+    border-radius: 10px;
+  }
+  
+
+  .cate-card2 {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .categtitle {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .categtitle:first-child {
+    font-weight: bold;
+  }
+  

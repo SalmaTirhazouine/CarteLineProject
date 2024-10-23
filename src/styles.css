@@ -1,0 +1,28 @@
+
+
+/*page login*/
+.articles-background {
+    background-color: rgb(255, 255, 255); /* Blanc */
+    background-image: url('assets/images/sng2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* Page sigin */
+.signin-background {
+    background-color: rgb(255, 255, 255); /* Blanc */
+    background-image: url('assets/images/sng2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.custom-containero{
+
+ background-color: rgb(255, 255, 255); /* Blanc */
+ background-image: url('assets/images/sng2.png');
+ 
+}
+.contact-background{
+    background-color: rgb(255, 255, 255);/* Blanc */
+    background-image: url('assets/images/sng2.png');
+}

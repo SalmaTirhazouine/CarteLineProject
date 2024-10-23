@@ -1,0 +1,78 @@
+
+
+<div class="container mt-5 custom-containero">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div class="cards">
+          <div class="cards-body">
+            <h3 class="cards-title">CarteLine</h3>
+            <a class="cards-brand" class="btn btn-success btn-sm me-2" href="/ajouter-entreprise">Ajouter Entreprise </a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<div class="container mt-5 custom-card-background ">
+    <h2 class="mb-4">Entreprise List</h2>
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped">
+        <thead class="table-dark">
+          <tr>
+            <th>Id</th>
+            <th>Nom</th>
+            <th>Adresse</th>
+            <th>Description</th>
+            <th>horaire</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let Entreprise of entreprises">
+            <td>{{ Entreprise.id }}</td>
+            <td>{{ Entreprise.nom }}</td>
+            <td>{{ Entreprise.adresse }}</td>
+            <td>{{ Entreprise.description }}</td>
+            <td>{{ Entreprise.horaire }}</td>
+            
+            <td>
+                <button class="btn btn-success btn-sm me-2"  href="/update-entreprise" (click)="updateEntreprise(Entreprise.id)" >Update</button>
+                <button class="btn btn-danger btn-sm me-2" (click)="deleteEntreprise(Entreprise.id)">Delete</button>
+                <button class="btn btn-primary btn-sm" (click)="viewEntreprise(Entreprise)">View</button>
+                
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>
+
+<div class="modal" [ngClass]="{'is-active': isViewOpen}">
+    <div class="modal-background" (click)="isViewOpen = false"></div>
+    <div class="modal-content">
+      <div class="modal-background" (click)="closeModalAndReturn()">
+      <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="modal" aria-label="Close"></button></div>
+      <div class="container mt-5 custom-containero">
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <div class="cards">
+              <div class="cards-body">
+                <h3 class="cards-title">{{ selectedEntreprise?.nom }}</h3>
+                
+              
+                <p>ID: {{ selectedEntreprise?.id }}</p>
+                <p>nom: {{ selectedEntreprise?.nom }}</p>
+                <p>adresse: {{ selectedEntreprise?.adresse }}</p>
+                <p>description: {{ selectedEntreprise?.description }}</p>
+                <p>horaire: {{ selectedEntreprise?.horaire }}</p>
+              
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close" (click)="isViewOpen = false"></button>
+</div>

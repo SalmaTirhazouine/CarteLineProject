@@ -1,0 +1,33 @@
+<div class="container mt-5 custom-container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">AjouterEntreprise</h3>
+                    <form (ngSubmit)="onsubmit()" >
+                        <div class="form-group">
+                            <label for="nom">Nom:</label>
+                            <input type="text" id="nom" name="nom" class="form-control" [(ngModel)]="entr.nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="adresse">Adresse:</label>
+                            <input type="text" id="adresse" name="adresse" class="form-control" [(ngModel)]="entr.adresse" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Description:</label>
+                            <input type="text" id="description" name="description" class="form-control" [(ngModel)]="entr.description" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="horaire">Horaire:</label>
+                            <input type="text" id="horaire" name="horaire" class="form-control" [(ngModel)]="entr.horaire" required>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-success">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
